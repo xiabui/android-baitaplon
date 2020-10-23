@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="118dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvKetqua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#009688"
@@ -21,7 +21,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/tvNhapdayso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -41,14 +41,14 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnInsertionSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="INSERTION SORT" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBubbleSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -57,7 +57,7 @@
         android:text="BUBBLE SORT" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSelectionSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -66,7 +66,7 @@
         android:text="SELECTION SORT" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnShellSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -75,7 +75,7 @@
         android:text="SHELL SORT" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnMergeSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -84,7 +84,7 @@
         android:text="MERGE SORT" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnThoat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
