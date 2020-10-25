@@ -41,6 +41,12 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập" />
+
+    <Button
         android:id="@+id/btnInsertionSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,4 +98,5 @@
         android:layout_marginBottom="10dp"
         android:background="#FF0707"
         android:text="THOÁT" />
+
 </LinearLayout>
