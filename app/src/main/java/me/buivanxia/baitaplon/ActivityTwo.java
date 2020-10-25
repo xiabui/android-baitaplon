@@ -18,8 +18,8 @@ public class ActivityTwo extends AppCompatActivity {
     TextView tvKetqua;
     int loai;
     Sort ort;
+    int[] mang = new int[1000];
     int n;
-    int[] mangB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +27,11 @@ public class ActivityTwo extends AppCompatActivity {
         Anhxa();
         Intent intent = getIntent();
         Bundle bundle = intent.getBundleExtra(AcitivityMain.BUNDLE);
-        String[] mang = bundle.getStringArray(AcitivityMain.mangB);
+        mang = bundle.getIntArray("mang");
         loai = bundle.getInt(AcitivityMain.chon);
-        mangB = ChuyenChuoiThanhInt(mang);
-        chon(loai, mangB);
-        hienthi();
+        int length = bundle.getInt("length");
+        chon(loai, length);
+        hienthi(length);
 
 
         btnQuaylai.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +42,7 @@ public class ActivityTwo extends AppCompatActivity {
             }
         });
     }
-    public int[] chon(int loai,int[] array)
+    public int[] chon(int loai, int length)
     {
         switch (loai)
         {
@@ -64,29 +64,21 @@ public class ActivityTwo extends AppCompatActivity {
                 txtTieuDeSort.setText("Shell Sort");
                 break;*/
         }
-        ort.sort(array);
-        return array;
+        ort.sort(mang, length);
+        return mang;
     }
     public void Anhxa()
     {
         tvKetqua = (TextView) findViewById(R.id.tvKetqua);
         btnQuaylai = (Button) findViewById(R.id.btnQuaylai);
     }
-    public int[] ChuyenChuoiThanhInt(String[] mang)
-    {
-        int[] n = new int[mang.length];
-        for(int i = 0; i < mang.length; i++)
-        {
-            n[i]=Integer.parseInt(mang[i]);
-        }
-        return n;
-    }
-    public void hienthi()
+
+    public void hienthi(int length)
     {
         String chuoi=" ";
-        for(int i = 0; i < mangB.length; i++)
+        for(int i = 0; i < length; i++)
         {
-            chuoi +=mangB[i] + " ";
+            chuoi += mang[i] + " ";
         }
         tvKetqua.setText(chuoi);
     }

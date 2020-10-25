@@ -4,9 +4,8 @@ import me.buivanxia.baitaplon.Sort;
 
 public class InsertionSort implements Sort {
     @Override
-    public void sort(int[] arr) {
-        int n = arr.length;
-        for (int i = 1; i < n; ++i) {
+    public void sort(int[] arr, int length) {
+        for (int i = 1; i < length; ++i) {
             int key = arr[i];
             int j = i - 1;
             while (j >= 0 && arr[j] > key) {

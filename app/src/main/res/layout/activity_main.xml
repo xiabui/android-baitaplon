@@ -32,6 +32,13 @@
         android:hint="Danh sách các số để sắp xếp"
         android:inputType="textPersonName" />
 
+    <Button
+        android:id="@+id/btnNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Nhập" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -39,12 +46,6 @@
         android:padding="10dp"
         android:text="Chọn thuật toán để xử lý"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnNhap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nhập" />
 
     <TextView
         android:id="@+id/tvDaysonhap"
