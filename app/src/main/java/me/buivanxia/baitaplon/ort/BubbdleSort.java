@@ -1,6 +1,8 @@
-package me.buivanxia.baitaplon;
+package me.buivanxia.baitaplon.ort;
 
-public class BubbdleSort implements Sort{
+import me.buivanxia.baitaplon.Sort;
+
+public class BubbdleSort implements Sort {
     @Override
     public void sort(int[] arr) {
         int t = 0;

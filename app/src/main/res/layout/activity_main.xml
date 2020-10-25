@@ -46,12 +46,10 @@
         android:layout_height="wrap_content"
         android:text="Nhập" />
 
-    <Button
-        android:id="@+id/btnInsertionSort"
+    <TextView
+        android:id="@+id/tvDaysonhap"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="INSERTION SORT" />
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnBubbleSort"
@@ -79,6 +77,13 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:text="SHELL SORT" />
+
+    <Button
+        android:id="@+id/btnInsertionSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="INSERTION SORT" />
 
     <Button
         android:id="@+id/btnMergeSort"

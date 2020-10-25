@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaiTapLon">
         /*khoi chay dau tien/*
-        <activity android:name=".MainActivity">
+        <activity android:name=".AcitivityMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

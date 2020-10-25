@@ -1,4 +1,6 @@
-package me.buivanxia.baitaplon;
+package me.buivanxia.baitaplon.ort;
+
+import me.buivanxia.baitaplon.Sort;
 
 public class SelectionSort implements Sort {
     @Override
